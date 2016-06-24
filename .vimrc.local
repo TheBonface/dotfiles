@@ -1,0 +1,25 @@
+" maps escape key to write file, press escape twice to save the file
+map <Esc><Esc> :w<CR>
+
+" ==========================================
+" RSpec.vim mappings
+" only use this settings in you are having thoughtbots vim.rspec plugin
+map <Leader>ts :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+
+" ========================================================
+" i try to remove tabs from my code, for consistency
+" if you want to use tabs please comment out or delete this section
+set tabstop=4       " The width of a TAB is set to 4.
+                    " Still it is a \t. It is just that
+                    " Vim will interpret it to be having
+                    " a width of 4.
+
+set shiftwidth=4    " Indents will have a width of 4
+
+set softtabstop=4   " Sets the number of columns for a TAB
+
+set expandtab       " Expand TABs to spaces
+" ======================================================
